@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<ruleset name="OWASP Top 10 Security Ruleset for PMD 7.23.0"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>OWASP Top 10 security rules compatible with PMD 7.23.0</description>
+
+    <!-- ============================================= -->
+    <!-- SECURITY - All security rules (keep all) -->
+    <!-- ============================================= -->
+    <rule ref="category/java/security.xml"/>
+
+    <!-- ============================================= -->
+    <!-- OWASP TOP 10 SPECIFIC RULES -->
+    <!-- ============================================= -->
+    
+    <!-- A03: Injection - SQL Injection -->
+    <rule ref="category/java/errorprone.xml/CloseResource"/>
+    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach"/>
+    
+    <!-- A02: Cryptographic Failures -->
+    <!-- Already covered by security.xml -->
+    
+    <!-- A08: Software & Data Integrity - Insecure Deserialization -->
+    <!-- Add insecure deserialization detection -->
+    
+    <!-- A10: Server-Side Request Forgery (SSRF) -->
+    <!-- Add SSRF detection -->
+
+    <!-- ============================================= -->
+    <!-- ERROR PRONE - Security-critical rules only -->
+    <!-- ============================================= -->
+    <rule ref="category/java/errorprone.xml/CloseResource"/>
+    <rule ref="category/java/errorprone.xml/MissingSerialVersionUID"/>
+    <rule ref="category/java/errorprone.xml/EqualsNull"/>
+    <rule ref="category/java/errorprone.xml/EmptyCatchBlock"/>
+
+    <!-- ============================================= -->
+    <!-- BEST PRACTICES - Security-critical rules only -->
+    <!-- ============================================= -->
+    <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace"/>
+    <rule ref="category/java/bestpractices.xml/SystemPrintln"/>
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
+    <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault"/>
+    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach"/>
+
+    <!-- ============================================= -->
+    <!-- PERFORMANCE - DoS-related rules only -->
+    <!-- ============================================= -->
+    <rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops"/>
+    <rule ref="category/java/performance.xml/InefficientStringBuffering"/>
+
+    <!-- ============================================= -->
+    <!-- MULTITHREADING - Thread safety rules only -->
+    <!-- ============================================= -->
+    <rule ref="category/java/multithreading.xml/AvoidSynchronizedAtMethodLevel"/>
+    <rule ref="category/java/multithreading.xml/UseConcurrentHashMap"/>
+    <rule ref="category/java/multithreading.xml/NonThreadSafeSingleton"/>
+    <rule ref="category/java/multithreading.xml/UnsynchronizedStaticFormatter"/>
+
+</ruleset>

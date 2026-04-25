@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2026-04-24T07:56:36.082">
+<file name="/home/pnagapaga/projects/cybersecurity/security-scanning-suite/backend/auth-service/src/main/java/com/pkn/authservice/dataseeders/RoleDataSeeder.java">
+<violation beginline="27" endline="27" begincolumn="37" endcolumn="52" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="com.pkn.authservice.dataseeders" class="RoleDataSeeder" method="LoadRoles" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+</file>
+<file name="/home/pnagapaga/projects/cybersecurity/security-scanning-suite/backend/auth-service/src/main/java/com/pkn/authservice/exceptions/RoleNotFoundException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.pkn.authservice.exceptions" class="RoleNotFoundException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/home/pnagapaga/projects/cybersecurity/security-scanning-suite/backend/auth-service/src/main/java/com/pkn/authservice/exceptions/ServiceLogicException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.pkn.authservice.exceptions" class="ServiceLogicException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/home/pnagapaga/projects/cybersecurity/security-scanning-suite/backend/auth-service/src/main/java/com/pkn/authservice/exceptions/UserAlreadyExistsException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.pkn.authservice.exceptions" class="UserAlreadyExistsException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/home/pnagapaga/projects/cybersecurity/security-scanning-suite/backend/auth-service/src/main/java/com/pkn/authservice/exceptions/UserNotFoundException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.pkn.authservice.exceptions" class="UserNotFoundException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/home/pnagapaga/projects/cybersecurity/security-scanning-suite/backend/auth-service/src/main/java/com/pkn/authservice/exceptions/UserVerificationFailedException.java">
+<violation beginline="3" endline="3" begincolumn="8" endcolumn="13" rule="MissingSerialVersionUID" ruleset="Error Prone" package="com.pkn.authservice.exceptions" class="UserVerificationFailedException" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/home/pnagapaga/projects/cybersecurity/security-scanning-suite/backend/auth-service/src/main/java/com/pkn/authservice/security/jwt/AuthEntryPointJwt.java">
+<violation beginline="31" endline="31" begincolumn="35" endcolumn="57" rule="UseConcurrentHashMap" ruleset="Multithreading" package="com.pkn.authservice.security.jwt" class="AuthEntryPointJwt" method="commence" variable="body" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_multithreading.html#useconcurrenthashmap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+</file>
+</pmd>

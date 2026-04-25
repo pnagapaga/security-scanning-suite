@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: auth-service
+    data:
+        mongodb:
+            uri: 
+    jpa:
+        hibernate:
+            ddl-auto: update
+
+server:
+    port: 9030
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka/
+    instance:
+        hostname: localhost
