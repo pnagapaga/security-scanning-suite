@@ -2,6 +2,20 @@
 
 Get started with security scanning in 5 minutes!
 
+A reference DevSecOps project demonstrating how SAST scanning can be embedded into a CI/CD workflow for a Spring Boot application.
+
+This project reflects practical security patterns I have used in real-world environments, including:
+
+    Static Application Security Testing
+    CI/CD security checks
+    Vulnerability reporting
+    Secure development workflow design
+    Developer-friendly security feedback loops
+
+The goal is not just to run a tool.
+
+The goal is to show how security controls can become part of the delivery process instead of being treated as a late-stage review.
+
 ## For Local Scanning
 
 ### Step 1: Install Prerequisites
