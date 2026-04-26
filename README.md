@@ -16,6 +16,8 @@ The goal is not just to run a tool.
 
 The goal is to show how security controls can become part of the delivery process instead of being treated as a late-stage review.
 
+This approach was influenced by security patterns implemented while working on real-world systems, including startup and federal environments.
+
 ## For Local Scanning
 
 ### Step 1: Install Prerequisites
