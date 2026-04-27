@@ -2,6 +2,8 @@
 
 Get started with security scanning in 5 minutes!
 
+- Sample executive security report: [View Report](https://github.com/pnagapaga/security-scanning-suite/blob/main/security-reports/AuthorizationServiceSecurityPostureExecSummary.pdf) 🎯
+
 A reference DevSecOps project demonstrating how SAST scanning can be embedded into a CI/CD workflow for a Spring Boot application.
 
 This project reflects practical security patterns I have used in real-world environments, including:
